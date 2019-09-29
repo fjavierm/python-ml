@@ -213,7 +213,7 @@ NumPy 2D array         pandas - DataFrame
 
 pandas library is not present in the default Python installation and needs to be installed:
 
-`pip install pandas`
+`pip install -U pandas`
 
 To use it, you just need to import it like any other Python library:
 
@@ -283,4 +283,73 @@ print(df)
 
 ## Python library - [Matplotlib](https://matplotlib.org)
 
-Matplotlib library is another library available for Python environments. It is a 
+Matplotlib library is another library available for Python environments. It is a library that it will help us presenting our data. It is a 2D graphical library.
+
+This is another library that it does not come with the default installation of Python.
+
+We can use Python list or NumPy data structures to represent the data. But, it seems recommendable to use NumPy data structures. 
+
+### Installing Matplotlib
+
+`pip install -U matplotlib` 
+
+#### Example
+
+[005-plt-example](./005-plt-example.py)
+
+```python
+import matplotlib.pyplot as plt
+
+a = [1, 2, 3, 4]
+b = [11, 22, 33, 44]
+
+plt.plot(a, b, color='blue', linewidth=3, label='line')
+plt.legend()
+plt.show()
+```
+
+### Details about the result view
+
+* The main object is the the window or main page, it is the top level object for the rest of the elements.
+* You cna create multiple independent objects.
+* Objects can have subtitles, legends and color bars among other.
+* We can generate areas within the objects. They are where the data is represented with methods like `plot()` or `scatter()` and they can have associated labels.
+* Every area has an X axi and a Y axi representing numerical values. They have scale, title and labels among other.
+
+### Matplotlib vs Pyplot vs Pylab
+
+* Matplotlib: The whole Python data visualization package.
+* Pyplot: It is a module of the Matplotlib package. Provides an interface to create objects and axis.
+* Pylab: It is a module of the Matplolib package. It is used to work with matrices. Its use is not recommended any more with the new IDEs and kernels.
+
+### Most common plot types
+
+* Line Plot - `plot()` - [006-plt-line-plot](./006-plt-line-plot.py).
+* Bar charts - `bar()` - [007-plt-bar-charts](./007-plt-bar-charts.py).
+* Histograms - `hist()` - [008-plt-histograms](./008-plt-histograms.py).
+* Scatter plots - `scatter()` - [009-plt-scatter-plots](./009-plt-scatter-plots.py).
+* Pie charts - `pie()` - [010-plt-pie-charts](./010-plt-pie-charts.py).
+
+You can see more examples of available plots [here](https://matplotlib.org/3.1.1/tutorials/introductory/sample_plots.html).
+
+## Python library - [scikit-learn](https://scikit-learn.org/stable/)
+
+This is probably one of the most useful libraries for Machine Learning in Python. It is an open source library and it brings us a range of supervised and unsupervised learning algorithms.
+
+This library include the next libraries or packages:
+
+* NumPy: N-dimensional matrix library.
+* pandas: Data structures and analysis.
+* SciPy: Essential library for computer science.
+* Matplotlib: 2D data representation.
+* IP[y]: Improved interactive console.
+* SymPy: Symbolic mathematics.
+
+### Basic functions
+
+* Supervised learning algorithms: It brings us a variety of supervised algorithms.
+* Cross validation: The library brings us instructions to implement some of the model's precision verification methods.
+* Unsupervised learning algorithms: It brings us a variety of unsupervised algorithms.
+* Data sets: A miscellaneous collection of data sets.
+* Characteristic extraction and selection: It is very useful to extract characteristics from images and texts. In addition, it can help us to identify significant attributes.
+* Community: It has some community behind improving the library.
